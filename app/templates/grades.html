@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<h1>{{grade.title}}</h1>
+	<small>Teacher - {{grade.author}}</small>
+	<small>Time - {{grade.remind_date}}</small>
+	<hr>
+	<div>
+		{{grade.body | safe}}
+	</div>
+{% endblock %}

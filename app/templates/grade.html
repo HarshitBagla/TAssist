@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<h1>Tasks</h1>
+	<ul class="list-group">
+		{% for grade in grades %}
+			<li class="list-group-item"><a href="grades/{{grade.id}}">{{grade.title}}</a></li>
+		{% endfor %}
+	</ul>
+	
+{% endblock %}
